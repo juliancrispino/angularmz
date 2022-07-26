@@ -1,0 +1,63 @@
+/*  Contacto  */
+.contacto{
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0;
+  color: white;
+  height: 100vh;
+  margin-top: 5rem;
+}
+.cuadro-contacto{
+  max-height: 30rem;
+}
+.cuadro-contacto img{
+  height: 32rem;
+  width: 100%;
+}
+.form-div{
+  background-color: #6a17b8;
+  padding: 2rem;
+  max-width: 30%;
+  height: 32rem;
+}
+.form-div h2{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.form-div p{
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+form input{
+  border-radius: 10px;
+  margin-top: .5rem;
+  font-size: 1rem;
+  background-color: rgba(232, 224, 233, 0.993);
+  color: black;
+  padding: .4rem;
+}
+#submit{
+  background-color: #000000;
+  padding: .5rem 2rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+#submit:hover{
+  background-color: #551392;
+  transition: ease-in-out 0.3s;
+  transform: scale(1.1);
+}
+
+
+.cuadroInvalido{
+  display: inline-block;
+  font-size: .8rem;
+  margin-bottom: 0;
+  padding: .6rem;
+}
+
+.cuadroInvalido p{
+  font-size: .8rem;
+  margin-bottom: 0;
+}

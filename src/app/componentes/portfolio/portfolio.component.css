@@ -1,0 +1,35 @@
+/*  Spoty  */
+.spoty{
+  padding: 10rem 5rem 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spoty-legend{
+  width: 80%;
+  margin-right: 2rem;
+}
+.spoty-legend h2{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.spoty-legend p{
+  color: #7c45b0;
+  font-size: 1.2rem;
+}
+
+.fotocar{
+  height: 50vh!important;
+  margin: -1rem auto 2rem auto;
+}
+
+
+/* Carrousel */
+.carrouselImagenes {
+  padding-bottom: 2rem;
+  background-color: #551392;
+}
+.imgcar{
+  margin: auto;
+  width: 30%;
+}

@@ -1,0 +1,43 @@
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-black d-flex justify-content-between fixed-top">-->
+<!--  <div class="container-fluid">-->
+<!--    <a class="navbar-brand" href="#">-->
+<!--      <img src="../assets/img/logo%20mz.png" alt="Logo" height="40" class="container-fluid">-->
+<!--    </a>-->
+<!--    <button class="navbar-toggler bg-white " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+
+<!--    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">-->
+<!--      <ul class="navbar-nav mr-auto ">-->
+<!--        <li class="nav-item active">-->
+<!--          <a class="nav-link  text-info" href="#">Home <span class="sr-only">|</span></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link  text-info" href="nosotros">Nosotros</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link  text-info" href="servicios">Servicios</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link  text-info" href="contacto">Contacto</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</nav>-->
+
+<header class="fixed-top">
+  <a href="#">
+    <img src="../../../assets/img/logo%20mz.png" alt="logo mz">
+  </a>
+  <nav class="nav" id="menu">
+    <li><a routerLink="/home" routerLinkActive="activo"> Home </a></li>
+    <li><a routerLink="/nosotros" routerLinkActive="activo"> Nosotros </a></li>
+    <li><a routerLink="/portfolio" routerLinkActive="activo"> Portfolio </a></li>
+    <li><a routerLink="/contacto" routerLinkActive="activo"> Contacto </a></li>
+    <button class="switch" id="switch" (click)="cambio()" [ngClass]="{'active': darkMode ? true : false}">
+      <span><i class="fas fa-sun"></i></span>
+      <span><i class="fas fa-moon"></i></span>
+    </button>
+  </nav>
+</header>

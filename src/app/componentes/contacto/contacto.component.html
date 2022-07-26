@@ -1,0 +1,40 @@
+<section class="contacto" id="contacto">
+
+  <div class="cuadro-contacto" data-aos="fade-right">
+    <img src="../../../assets/img/aside.jpg" alt="Contacto">
+  </div>
+  <div class="form-div" data-aos="fade-left">
+    <h2>CONTACTANOS</h2>
+    <p>Por cualquier duda o consulta, sentite libre de contactarte a través de este formulario</p>
+
+
+
+    <form (ngSubmit)="enviarFormulario(formContacto)" #formContacto= "ngForm">
+      <label for="nombre">Nombre</label><br>
+      <input type="text" name="nombre" id="nombre" required placeholder="Tu nombre" [(ngModel)]="modelo.nombre" #nombreControl="ngModel" >
+      <!-- [(ngModel)] sirve para el 2 way binding, con el modelo de objeto que cree en .ts     -->
+      <!-- #nombreControl="ngModel" es para validar los campos -->
+      <div *ngIf="nombreControl.invalid && nombreControl.dirty" class="alert alert-danger cuadroInvalido">Campo obligatorio</div>
+      <br>
+
+
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" required placeholder="Tu e-mail" [(ngModel)]="modelo.email" #emailControl="ngModel">
+      <div *ngIf="emailControl.invalid && emailControl.dirty" class="alert alert-danger cuadroInvalido">Campo obligatorio</div>
+      <br>
+
+      <label for="mensaje">Mensaje</label><br>
+      <input type="textarea" name="mensaje" id="mensaje" required placeholder="Tu mensaje" [(ngModel)]="modelo.mensaje" #mensajeControl="ngModel" minlength="10">
+      <div *ngIf="mensajeControl.invalid && mensajeControl.dirty" class="alert alert-danger cuadroInvalido">
+        <p *ngIf="mensajeControl.errors['required']">Campo obligatorio</p>
+        <p *ngIf="mensajeControl.errors['minlength']">Min: 10 caracteres</p>
+      </div>
+
+      <br>
+
+      <input type="submit" id="submit" [disabled]="formContacto.invalid" (click)=avisoOk()>
+
+    </form>
+  </div>
+</section>
+
