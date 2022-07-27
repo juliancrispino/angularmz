@@ -14,28 +14,12 @@ export class NavbarComponent implements OnInit {
   cambio() {
     document.body.classList.toggle('dark');
     this.darkMode = !this.darkMode;
-    console.log(this.darkMode)
-
   }
-
-
-
 
 
   ngOnInit(): void {
   }
 
 
-
-
 }
 
-
-// @ViewChild("parent") private parentRef: ElementRef<HTMLElement>;
-//
-// public getChildren() {
-//   const parentElement = this.parentRef.nativeElement;
-//   const firstChild = parentElement.children[0];
-//   const firstImage = parentElement.querySelector("img");
-// ...
-// }
