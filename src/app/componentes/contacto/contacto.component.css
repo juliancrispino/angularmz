@@ -36,6 +36,15 @@ form input{
   color: black;
   padding: .4rem;
 }
+textarea{
+  border-radius: 10px;
+  margin-top: .5rem;
+  font-size: 1rem;
+  background-color: rgba(232, 224, 233, 0.993);
+  color: black;
+  padding: .4rem;
+  position: relative;
+}
 #submit{
   background-color: #000000;
   padding: .5rem 2rem;
@@ -58,6 +67,19 @@ form input{
 }
 
 .cuadroInvalido p{
+  font-size: .8rem;
+  margin-bottom: 0;
+}
+
+.cuadroInvalidoText{
+  display: inline-block;
+  font-size: .8rem;
+  padding: .6rem;
+  position: absolute;
+  top: 34rem;
+}
+
+.cuadroInvalidoText p{
   font-size: .8rem;
   margin-bottom: 0;
 }

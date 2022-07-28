@@ -24,8 +24,8 @@
       <br>
 
       <label for="mensaje">Mensaje</label><br>
-      <input type="textarea" name="mensaje" id="mensaje" required placeholder="Tu mensaje" [(ngModel)]="modelo.mensaje" #mensajeControl="ngModel" minlength="10">
-      <div *ngIf="mensajeControl.invalid && mensajeControl.dirty" class="alert alert-danger cuadroInvalido">
+      <textarea name="mensaje" id="mensaje" required placeholder="Tu mensaje" [(ngModel)]="modelo.mensaje" #mensajeControl="ngModel" minlength="10" class="textarea" rows="3" cols="23"></textarea>
+      <div *ngIf="mensajeControl.invalid && mensajeControl.dirty" class="alert alert-danger cuadroInvalidoText">
         <p *ngIf="mensajeControl.errors['required']">Campo obligatorio</p>
         <p *ngIf="mensajeControl.errors['minlength']">Min: 10 caracteres</p>
       </div>
@@ -35,6 +35,9 @@
       <input type="submit" id="submit" [disabled]="formContacto.invalid" (click)=avisoOk()>
 
     </form>
+
   </div>
 </section>
+
+
 

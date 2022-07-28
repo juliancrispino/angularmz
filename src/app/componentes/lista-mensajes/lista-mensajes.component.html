@@ -1,0 +1,17 @@
+<table class="table table-striped">
+  <thead class="table-dark">
+  <tr>
+    <th>nombre</th>
+    <th>mail</th>
+    <th>mensaje</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor=" let mensaje of mensajes">
+    <td>{{mensaje.nombre}}</td>
+    <td>{{mensaje.email}}</td>
+    <td>{{mensaje.mensaje}}</td>
+  </tr>
+  </tbody>
+
+</table>

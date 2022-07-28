@@ -10,6 +10,8 @@ import { PortfolioComponent } from './componentes/portfolio/portfolio.component'
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import {FormsModule} from "@angular/forms";
+import { ListaMensajesComponent } from './componentes/lista-mensajes/lista-mensajes.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -20,12 +22,14 @@ import {FormsModule} from "@angular/forms";
     NosotrosComponent,
     PortfolioComponent,
     ContactoComponent,
-    FooterComponent
+    FooterComponent,
+    ListaMensajesComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]
