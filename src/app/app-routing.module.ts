@@ -4,6 +4,7 @@ import {HeroeComponent} from "./componentes/heroe/heroe.component";
 import {NosotrosComponent} from "./componentes/nosotros/nosotros.component";
 import {PortfolioComponent} from "./componentes/portfolio/portfolio.component";
 import {ContactoComponent} from "./componentes/contacto/contacto.component";
+import {ListaMensajesComponent} from "./componentes/lista-mensajes/lista-mensajes.component";
 
 const routes: Routes = [
   {path : '', component : HeroeComponent},
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path : 'nosotros', component : NosotrosComponent},
   {path : 'portfolio', component : PortfolioComponent},
   {path : 'contacto', component : ContactoComponent},
+  {path : 'mensajes', component : ListaMensajesComponent},
   {path : '', pathMatch: 'full', redirectTo : 'home'}
 ];
 
