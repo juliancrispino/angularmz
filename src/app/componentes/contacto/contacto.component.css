@@ -2,10 +2,10 @@
 .contacto{
   display: flex;
   justify-content: center;
-  padding: 6rem 0;
+  padding: 8rem 0 0 0;
   color: white;
   height: 100vh;
-  margin-top: 5rem;
+
 }
 .cuadro-contacto{
   max-height: 30rem;
