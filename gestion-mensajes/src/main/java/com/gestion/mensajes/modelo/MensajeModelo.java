@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "mensajes")
-public class Mensaje {
+public class MensajeModelo {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,8 +20,15 @@ public class Mensaje {
   private String mensaje;
 
 
-  //Contructor
-  public Mensaje() {
+  //Contructores
+  public MensajeModelo() {
+  }
+
+  public MensajeModelo(Long id, String nombre, String email, String mensaje) {
+    this.id = id;
+    this.nombre = nombre;
+    this.email = email;
+    this.mensaje = mensaje;
   }
 
   //Getters and setters

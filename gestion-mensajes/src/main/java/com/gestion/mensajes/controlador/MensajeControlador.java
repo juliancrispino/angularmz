@@ -1,8 +1,9 @@
 package com.gestion.mensajes.controlador;
 
-import com.gestion.mensajes.modelo.Mensaje;
-import com.gestion.mensajes.repositorio.MensajeRepositorio;
+import com.gestion.mensajes.modelo.MensajeModelo;
+import com.gestion.mensajes.servicio.MensajeDAOImp;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,18 +14,18 @@ import java.util.List;
 public class MensajeControlador {
 
   @Autowired
-  private MensajeRepositorio repositorio;
+  private MensajeDAOImp mensajeDAOImp;   //Llamo al repositorio como una variable llamada "repositorio"
 
   //este metodo sirve para listar todos los mensajes
   @GetMapping("/mensajes")
-  public List<Mensaje> listarTodosLosMensajes(){
-    return repositorio.findAll();
+  public List<MensajeModelo> listarTodosLosMensajes(){
+    return this.mensajeDAOImp.listarTodosLosMensajes();
   }
 
   //Para guardar mensaje
   @PostMapping("/mensajes")
-  public Mensaje guardarMensaje(@RequestBody Mensaje mensaje){
-    return repositorio.save(mensaje);
+  public MensajeModelo guardarMensaje(@RequestBody MensajeModelo mensaje){
+    return mensajeDAOImp.guardarMensaje(mensaje);
   }
 
 
