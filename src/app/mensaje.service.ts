@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 import {Mensaje} from "./componentes/contacto/mensaje";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root'      //Para que este disponible en toda la aplicacion
 })
 export class MensajeService {
 

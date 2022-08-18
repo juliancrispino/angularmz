@@ -9,7 +9,7 @@ import java.util.List;
 
 
 @Service
-public class MensajeDAOImp implements MensajeDAO{
+public class MensajeServiceImp implements MensajeService{
 
   @Autowired
   private MensajeRepositorio mensajeRepositorio;

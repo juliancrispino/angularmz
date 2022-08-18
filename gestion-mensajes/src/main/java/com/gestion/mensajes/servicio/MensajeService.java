@@ -4,7 +4,7 @@ import com.gestion.mensajes.modelo.MensajeModelo;
 
 import java.util.List;
 
-public interface MensajeDAO {
+public interface MensajeService {
 
   List<MensajeModelo> listarTodosLosMensajes();
 
