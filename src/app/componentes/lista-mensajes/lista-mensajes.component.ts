@@ -19,7 +19,7 @@ export class ListaMensajesComponent implements OnInit {
   }
 
   private obtenerMensajes(){
-    this.mensajeServicio.obtenerListaDeEmpleados().subscribe(dato =>{
+    this.mensajeServicio.obtenerListaDeMensajes().subscribe(dato =>{
       this.mensajes = dato;
     });
   }

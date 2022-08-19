@@ -1,10 +1,11 @@
 package com.gestion.mensajes.modelo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "mensajes")
-public class MensajeModelo {
+public class MensajeModelo implements Serializable {    //Serializable encripta el objeto, lo convierte en bytes
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

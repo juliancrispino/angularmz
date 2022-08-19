@@ -15,7 +15,7 @@ export class MensajeService {
 
 
   //Nos permite obtener los mensajes
-  obtenerListaDeEmpleados():Observable<Mensaje[]>{
+  obtenerListaDeMensajes():Observable<Mensaje[]>{
     return this.httpClient.get<Mensaje[]>(`${this.baseURL}`)
   }
 
